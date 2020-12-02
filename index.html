@@ -1,5 +1,5 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>博耕留学</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,9 +19,11 @@
 <!-- /fonts -->
 <!-- js files -->
 <script src="js/modernizr.js"></script>
+
 <!-- /js files -->
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<audio src="music/180105.mp3"  hidden id="music"></audio>
 <!-- navigation -->
 <div class="navbar-wrapper">
     <div class="container">
@@ -51,7 +53,6 @@
 	</div>
 </div>
 <!-- /navigation -->
-<audio autoplay="" loop=""> <source src="music/180105.mp3"></audio>
 <!-- banner section -->
 <section class="banner">
 	<div class="cover-slider__wrap">
@@ -390,6 +391,19 @@ $(window).scroll(function() {
 });
 </script>
 <!-- /js for sliding animations -->
+<script>
+    //封装函数让谷歌浏览器自动播放
+    function play() {
+      var music = document.getElementById("music"); 
+　　　　//判断如果音乐停止播放中，就让他播放。。。
+      if (music.paused) { 
+        music.paused = false;
+        music.play(); 
+      }
+    }
+　　　//调用函数
+    setInterval(play(), 1);
+</script>
 <!-- /js files -->
 </body>
 </html>
