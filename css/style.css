@@ -485,7 +485,7 @@ section.our-team {
 	-webkit-background-size:100% 100%;
 	-moz-background-size:100% 100%;
 	-o-background-size:100% 100%;
-	padding:100px 0;
+	padding:100px 0 250px 0;
 } 
 section.our-team h3.text-center {
 	color: #fff;
@@ -498,7 +498,7 @@ section.our-team p.text-center {
 	color: #fff;
 	font-size:17px;
 	font-weight:inherit;
-	padding:0px 0 70px;
+	padding:0px 0 20px;
 }
 section.our-team h4 {
 	color: #fff;
